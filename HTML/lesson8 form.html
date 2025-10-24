@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" href="download.png">
+</head>
+<body>
+    <h1><u>Form and input</u></h1>
+    <a href="#Contact me">Contact us</a>
+    <fieldset>
+        <legend>
+            form and input
+        </legend>
+        <form id="Contact me" action="https://httpbin.org/get" method="get">
+            <label for="first name">First name:</label>
+            <input type="text" name="first name" id="first name" placeholder="Please enter your first name">
+            <br>
+            <label for="last name">Last name:</label>
+            <input type="text" name="last name" id="last name" placeholder="Please enter your last name">
+            <br>
+             <label for="Contact">Contact no:</label>
+            <input type="tel" name="Contact" id="Contact" placeholder="5555555555">
+            <br>
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" id="Password" placeholder="*********"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+            <br>
+            <label for="State">State</label>
+            <select name="State" id="State">
+                <option value="punj">Punjab</option>
+                <option value="del">Delhi</option>
+                <option value="rj">Rajasthan</option>
+                <option value="up">
+                    Uttarpradesh
+                </option>
+            </select>
+            <br>
+            <label for="Branch">Branch:</label>
+            <input type="text" name="Branch" id="Branch" list="branch-list">
+            <datalist id="branch-list">
+                <option value="CSE">cse</option>
+                <option value="CSE ds">cse ds</option>
+                <option value="CSe si-ml">cse ai-ml</option>
+                <option value="ece">Ece</option>
+                
+            </datalist>
+            <br>
+            <p>
+                Gender:
+                <input type="radio" name="gender" id="gender" value="male">
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="gender" value="female">
+                <label for="female">female</label>
+                <input type="radio" name="gender" id="gender" value="other">
+                <label for="other">Other</label>
+            </p>
+            <label for="message">Your message here:</label><br>
+            <textarea name="message" id="message"  rows="10" cols="10" placeholder="Enter your message here"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+            <br>
+            <button tyoe="reset">Reset</button>
+
+        </form>
+    </fieldset>
+</body>
+</html>
